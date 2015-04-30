@@ -16,7 +16,9 @@ Jasmine will run automatically after loading the web page. The following Feed Re
 	
 		•	Makes sure the menu is hidden by default when the page loads.
 
-		•	Makes sure the menu displays when the icon is clicked and hides when the icon is clicked again.
+		•	Makes sure the menu displays when the icon is clicked
+		
+		•       Makes sure hides when the icon is clicked again.
 		
 
 3.	Initial Entries
