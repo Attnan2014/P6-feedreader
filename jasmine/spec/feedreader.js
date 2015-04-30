@@ -127,14 +127,14 @@ $(function() {
 
         beforeEach(function(done){
             //saving text of the first entry into var entry
-            beforeentry = $('.entry').children('.entry');
+            beforeentry = $('.feed a').children('.entry');
             //loading second feed
             loadFeed(2, done);
     });
     
     it('the content changes when a new feed is loaded', function(done){
         //saving text of te first entry into var entryAfterchange
-        entryAfterchange = $('.entry').children('.entry');
+        entryAfterchange = $('.feed a').children('.entry');
         // Has the content has changed after loading new feed?
         //".entry" elements should be different 
         expect(beforeentry).not.toBe(entryAfterchange);
