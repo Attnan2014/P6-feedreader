@@ -25,6 +25,9 @@ All tests should pass and the results will be displayed at the bottom of the pag
 References
 
 Uadcity JavaScript Testing course: https://www.udacity.com/course/viewer#!/c-ud549-nd/ 
+
 Piazza: http://piazza.com/ and Udacity 
+
 Jasmine documentation: http://jasmine.github.io/2.0/ 
+
 http://www.cheatography.com/citguy/cheat-sheets/jasmine-js-testing/
