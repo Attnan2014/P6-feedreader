@@ -126,7 +126,7 @@ $(function() {
             entryAfterchange;
 
         beforeEach(function(done){
-            //saving text of the first entry into var entry
+            //saving text of the first entry into var beforeentry
             beforeentry = $('.entry').children('.entry');
             //loading second feed
             loadFeed(2, done);
