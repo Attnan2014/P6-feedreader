@@ -1,4 +1,4 @@
-Project 6 - Feed Reader Testing
+# Project 6 - Feed Reader Testing
 
 Jasmine will run automatically after loading the web page. The following Feed Reader features are tested:
 
