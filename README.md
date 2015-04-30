@@ -3,6 +3,7 @@ Project 6 - Feed Reader Testing
 Jasmine will run automatically after loading the web page. The following Feed Reader features are tested:
 
 1.	RSS Feeds
+	
 		•	Checks if all Feeds URLs are defined.
 
 		•	Checks if all feeds URLs are not empty.
@@ -12,16 +13,19 @@ Jasmine will run automatically after loading the web page. The following Feed Re
 		•	Checks if all feeds names are not empty.
 
 2.	The Menu
+	
 		•	Makes sure the menu is hidden by default when the page loads.
 
 		•	Makes sure the menu displays when the icon is clicked and hides when the icon is clicked again.
 		
 
 3.	Initial Entries
+	
 		•	Makes sure there is at least one article loaded on the page when a new feed is loaded.
 
 
 4.	New Feed Selection
+
 		•	Makes sure the content of the page changes when a new feed loads.
 
 
