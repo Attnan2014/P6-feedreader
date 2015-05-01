@@ -4,7 +4,7 @@ Jasmine will run automatically after loading the web page. You can test Here: we
 
 Once loaded the following Feed Reader features are tested:
 
-You can click each to test individually:
+You can also click each to test individually:
 
 1.	RSS Feeds
 	
