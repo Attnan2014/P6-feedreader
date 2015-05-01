@@ -14,7 +14,7 @@ $(function() {
     * feeds definitions, the allFeeds variable in our application.
     */
     describe('RSS Feeds', function() {
-        /* This is our first test - it tests to make sure that the
+         /* This is our first test - it tests to make sure that the
          * allFeeds variable has been defined and that it is not
          * empty. Experiment with this before you get started on
          * the rest of this project. What happens when you change
@@ -33,16 +33,18 @@ $(function() {
          */
         it('URLs for the feeds are defined', function(){
             allFeeds.forEach(function(feed){
-            //confirm that the URL is defined
-            expect(feed.url).toBeDefined();
+                //confirm that the URL is defined
+                expect(feed.url).toBeDefined();
+            });
         });
-    });
+
         it('URLs for the feeds are not empty', function(){
             allFeeds.forEach(function(feed){
-            //confirm that URL is not empty
-            expect(feed.url.length).not.toBe(0);
+                //confirm that URL is not empty
+                expect(feed.url.length).not.toBe(0);
+            });
         });
-    });
+
 
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
@@ -50,20 +52,20 @@ $(function() {
          */
         it('names for all feeds are defined', function(){
             allFeeds.forEach(function(feed){
-            //confirm that the feed name is defined
-            expect(feed.name).toBeDefined();
+                //confirm that the feed name is defined
+                expect(feed.name).toBeDefined();
+            });
         });
-    });
         it('names for all feeds are not empty', function(){
             allFeeds.forEach(function(feed){
-            //confirm that feed name is not empty
-            expect(feed.name.length).not.toBe(0);
+                //confirm that feed name is not empty
+                expect(feed.name.length).not.toBe(0);
+            });
         });
     });
-});
 
     describe('The menu', function() {
-    /* TODO: Write a new test suite named "The menu" */
+        /* TODO: Write a new test suite named "The menu" */
 
         /* TODO: Write a test that ensures the menu element is
          * hidden by default. You'll have to analyze the HTML and
@@ -74,8 +76,8 @@ $(function() {
             var body = $('body');
             //checking that bodyhas class "menu-hidden" - that is that menu is hidden by default
             expect(body.hasClass("menu-hidden")).toBe(true);
-
         });
+        
          /* TODO: Write a test that ensures the menu changes
           * visibility when the menu icon is clicked. This test
           * should have two expectations: does the menu display when
@@ -90,13 +92,12 @@ $(function() {
             menuicon.click();
             //Ensuring the menu hides when clicked again
             expect(body.hasClass("menu-hidden")).toBe(true);
-
         });
     });
     /* TODO: Write a new test suite named "Initial Entries" */
     describe('Initial Entries', function(){
         beforeEach(function(done){
-        loadFeed(0, done);
+            loadFeed(0, done);
     });
         /* TODO: Write a test that ensures when the loadFeed
          * function is called and completes its work, there is at least
@@ -113,9 +114,7 @@ $(function() {
 
     });
 
-
-    /* TODO: Write a new test suite named "New Feed Selection"
-
+        /* TODO: Write a new test suite named "New Feed Selection"
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
@@ -132,7 +131,7 @@ $(function() {
         });
 
         it('the content changes when a new feed is loaded', function(done){
-            //saving text of te first entry into var entryAfterchange
+        //saving text of te first entry into var entryAfterchange
             entryAfterchange = $('.feed a').children('.entry');
             // Has the content has changed after loading new feed?
             //".entry" elements should be different
@@ -145,4 +144,4 @@ $(function() {
             loadFeed(0, done);
         });
     });
-}();
+}());
