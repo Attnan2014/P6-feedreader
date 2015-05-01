@@ -33,17 +33,16 @@ $(function() {
          */
         it('URLs for the feeds are defined', function(){
             allFeeds.forEach(function(feed){
-                //confirm that the URL is defined
-                expect(feed.url).toBeDefined();
-            });
+            //confirm that the URL is defined
+            expect(feed.url).toBeDefined();
         });
+    });
         it('URLs for the feeds are not empty', function(){
             allFeeds.forEach(function(feed){
-                //confirm that URL is not empty
-                expect(feed.url.length).not.toBe(0);
-            });
+            //confirm that URL is not empty
+            expect(feed.url.length).not.toBe(0);
         });
-
+    });
 
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
@@ -51,17 +50,17 @@ $(function() {
          */
         it('names for all feeds are defined', function(){
             allFeeds.forEach(function(feed){
-                //confirm that the feed name is defined
-                expect(feed.name).toBeDefined();
-            });
-        });
-        it('names for all feeds are not empty', function(){
-            allFeeds.forEach(function(feed){
-                //confirm that feed name is not empty
-                expect(feed.name.length).not.toBe(0);
-            });
+            //confirm that the feed name is defined
+            expect(feed.name).toBeDefined();
         });
     });
+        it('names for all feeds are not empty', function(){
+            allFeeds.forEach(function(feed){
+            //confirm that feed name is not empty
+            expect(feed.name.length).not.toBe(0);
+        });
+    });
+});
 
     describe('The menu', function() {
     /* TODO: Write a new test suite named "The menu" */
@@ -97,7 +96,7 @@ $(function() {
     /* TODO: Write a new test suite named "Initial Entries" */
     describe('Initial Entries', function(){
         beforeEach(function(done){
-            loadFeed(0, done);
+        loadFeed(0, done);
     });
         /* TODO: Write a test that ensures when the loadFeed
          * function is called and completes its work, there is at least
@@ -106,10 +105,10 @@ $(function() {
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
         it('confirms there is at least one feed added', function(done){
-        var entry = $('.feed a').children('.entry');
-        // checking if the feed has more than 0 entries
-        expect(entry.length).toBeGreaterThan(0);
-          done();
+            var entry = $('.feed a').children('.entry');
+            // checking if the feed has more than 0 entries
+            expect(entry.length).toBeGreaterThan(0);
+            done();
         });
 
     });
@@ -121,7 +120,7 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
-        describe('New Feed Selection', function(){
+    describe('New Feed Selection', function(){
         var beforeentry,
             entryAfterchange;
 
@@ -130,20 +129,20 @@ $(function() {
             beforeentry = $('.feed a').children('.entry');
             //loading second feed
             loadFeed(2, done);
-    });
-
-    it('the content changes when a new feed is loaded', function(done){
-        //saving text of te first entry into var entryAfterchange
-        entryAfterchange = $('.feed a').children('.entry');
-        // Has the content has changed after loading new feed?
-        //".entry" elements should be different
-        expect(beforeentry).not.toBe(entryAfterchange);
-          done();
         });
 
-    afterEach(function(done){
-        //loading back the first feed
-         loadFeed(0, done);
+        it('the content changes when a new feed is loaded', function(done){
+            //saving text of te first entry into var entryAfterchange
+            entryAfterchange = $('.feed a').children('.entry');
+            // Has the content has changed after loading new feed?
+            //".entry" elements should be different
+            expect(beforeentry).not.toBe(entryAfterchange);
+            done();
+        });
+
+        afterEach(function(done){
+            //loading back the first feed
+            loadFeed(0, done);
+        });
     });
-    });
-}());
+}();
