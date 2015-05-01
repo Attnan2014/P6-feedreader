@@ -65,7 +65,7 @@ $(function() {
 
     describe('The menu', function() {
     /* TODO: Write a new test suite named "The menu" */
-        
+
         /* TODO: Write a test that ensures the menu element is
          * hidden by default. You'll have to analyze the HTML and
          * the CSS to determine how we're performing the
@@ -113,10 +113,10 @@ $(function() {
         });
 
     });
-        
+
 
     /* TODO: Write a new test suite named "New Feed Selection"
-    
+
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
@@ -131,19 +131,19 @@ $(function() {
             //loading second feed
             loadFeed(2, done);
     });
-    
+
     it('the content changes when a new feed is loaded', function(done){
         //saving text of te first entry into var entryAfterchange
         entryAfterchange = $('.feed a').children('.entry');
         // Has the content has changed after loading new feed?
-        //".entry" elements should be different 
+        //".entry" elements should be different
         expect(beforeentry).not.toBe(entryAfterchange);
           done();
         });
 
     afterEach(function(done){
         //loading back the first feed
-            loadFeed(0, done);
+         loadFeed(0, done);
     });
     });
 }());
