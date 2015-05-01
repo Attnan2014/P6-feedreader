@@ -1,6 +1,6 @@
 # Project 6 - Feed Reader Testing
 
-Jasmine will run automatically after loading the web page. You can test Here: website http://attnan2014.github.io.
+Jasmine will run automatically after loading the web page. You can test Here: http://attnan2014.github.io.
 
 Once loaded the following Feed Reader features are tested:
 
